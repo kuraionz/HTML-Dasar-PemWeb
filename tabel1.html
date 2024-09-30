@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi Sederhana</title>
+    <style>
+        table {
+            width: 50%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+        td, th {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="date"] {
+            width: 100%;
+            padding: 5px;
+        }
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: indigo;
+            color: white;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">Form Registrasi</h2>
+
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <th colspan="2">Data Registrasi</th>
+            </tr>
+            <tr>
+                <td>Nama depan:</td>
+                <td><input type="text" name="nama_depan" required></td>
+            </tr>
+            <tr>
+                <td>Nama belakang:</td>
+                <td><input type="text" name="nama_belakang" required></td>
+            </tr>
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" name="username" required></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td>Alamat:</td>        
+                <td><input type="text" name="alamat" required></td>
+            </tr>
+            <tr>
+                <td>Tanggal Lahir:</td>
+                <td><input type="date" name="tanggal_lahir" required></td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin:</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Laki-laki</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Perempuan</label>
+                </td>
+            </tr>
+            <tr>
+                <td>No. Telepon:</td>
+                <td><input type="text" name="telepon" required></td>
+            </tr>
+            <tr>
+                <td>Unggah Foto:</td>
+                <td><input type="file" name="foto" accept="image/*" required></td>
+            </tr>            
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Daftar">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+</html>
